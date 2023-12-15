@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@400;700&family=Outfit:wght@400;700&family=Overpass:wght@700&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 800px;
+}
+
+.container .section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 36px;
+}
+
+.container .section img {
+  width: 50px;
+}
+
+.container .section h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display";
+}
+
+.container .section p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca";
+  font-size: 14px;
+}
+
+.container .one,
+.one a {
+  background: hsl(31, 77%, 52%);
+  color: hsl(31, 77%, 52%);
+}
+
+.container .two,
+.two a {
+  background: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
+}
+
+.container .three,
+.three a {
+  background: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
+}
+
+.container .section a {
+  text-decoration: none;
+  background: hsl(0, 0%, 95%);
+  padding: 12px 20px;
+  width: fit-content;
+  border-radius: 40px;
+  margin-top: 60px;
+  font-family: "Lexend Deca";
+  font-size: 14px;
+}
+
+.attribution {
+  margin-top: 40px;
+}
+
+@media (max-width: 824px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    width: 400px;
+  }
+  .container .section {
+    gap: 15px;
+  }
+
+  .container .section a {
+    margin-top: 20px;
+  }
+
+  .attribution {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    flex-direction: column;
+    width: 370px;
+  }
+}
